@@ -25,7 +25,7 @@ jobs:
         run: firebase login:ci --no-interactive
 
       - name: Deploy to Firebase Hosting
-        run: firebase deploy --only hosting
+        run: firebase deploy
 
       - name: Complete the Deployment
         run: echo "Firebase deployment complete!"
